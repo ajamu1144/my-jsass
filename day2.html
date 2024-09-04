@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Declaration Comparison</title>
+    <style>
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .contain {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background: #575757;
+      border-radius: 4px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    th, td {
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+        background-color: #e9e9e9;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="contain">
+        <h1 class="logo">MyAssignment</h1>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="day2.html" class="nav-link">Day 2<a></li>
+          <li><a href="object.html" class="nav-link">Day 3<a></li>
+          <li><a href="lo_and_co.html" class="nav-link">Day 4</a></li>
+          <li><a href="class 2.html" class="nav-link">Day 5</a></li>
+          <li><a href="jsass3.html" class="nav-link">Day 6</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+        <h1>JavaScript Variable Declarations</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Keyword</th>
+                    <th>Scope</th>
+                    <th>Hoisting</th>
+                    <th>Re-assignment</th>
+                    <th>Special Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>var</td>
+                    <td>Function or global</td>
+                    <td>Hoisted and initialized with undefined</td>
+                    <td>Can be re-assigned</td>
+                    <td>Can lead to scope issues</td>
+                </tr>
+                <tr>
+                    <td>let</td>
+                    <td>Block</td>
+                    <td>Hoisted but not initialized</td>
+                    <td>Can be re-assigned</td>
+                    <td>Has block scope</td>
+                </tr>
+                <tr>
+                    <td>const</td>
+                    <td>Block</td>
+                    <td>Hoisted but not initialized</td>
+                    <td>Cannot be re-assigned</td>
+                    <td>Contents of objects/arrays can be modified</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
