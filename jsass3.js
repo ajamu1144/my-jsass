@@ -75,8 +75,8 @@ function loan() {
 }
 
 function invest (){
-    let amount_invested = document.getElementById('Amount_Invested').value;
-    let time = document.getElementById('timei').value;
+    let amount_invested = parseInt(document.getElementById('Amount_Invested').value);
+    let time = parseInt(document.getElementById('timei').value);
     let totali = 15/100 *amount_invested + amount_invested;
     document.getElementById("sooooo").textContent = `you will be paid a total of $${totali} within a total of ${time} month's`
 
